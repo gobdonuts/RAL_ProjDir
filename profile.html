@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Profile</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar exemple: IMPORTANT D'IMPORTER LES SCRIPT ET LINK -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!--Link to home page-->
+                <img src="http://placehold.it/250x50/343A40/?text=RAL+LOGO+Tabarnak">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile_container row">
+        <div class="col-4" style="border: 2px solid black;">
+            <h4>Votre Profil</h4>
+            <h5>Bienvenue Mathieu Labelle</h5>
+            <div class="profilepic"></div>
+        </div>
+        <div class="col-8" style="border: 2px solid black;">
+            <h4>Vos Informations</h4>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<style>
+    .profilepic {
+        position: relative;
+        border-radius: 20%;
+        background: url(./content/profilepic.jpg) 50% 50% no-repeat;
+        width: 250px;
+        height: 250px;
+    }
+
+    th {
+        padding: .2em;
+    }
+
+    td {
+        background-color: #ffc;
+        border: 1px solid #900;
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    #trHeader {
+        color: #900;
+        text-decoration: underline;
+    }
+
+    .centerCell {
+        text-align: center;
+    }
+</style>
+
+</html>
