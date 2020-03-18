@@ -57,14 +57,19 @@
     </nav>
 
     <div class="profile_container row">
-        <div class="col-4" style="border: 2px solid black;">
-            <h4>Votre Profil</h4>
-            <h5>Bienvenue Mathieu Labelle</h5>
-            <div class="profilepic"></div>
+        <div class="col-4">
+            <div class="profile">
+                <h4>Votre Profil</h4>
+                <h5>Bienvenue Mathieu Labelle</h5>
+                <div class="profilepic"><img src="./content/profilepic.jpg" style="max-width: 100%; height: auto;"></div>
+            </div>
         </div>
-        <div class="col-8" style="border: 2px solid black;">
-            <h4>Vos Informations</h4>
+        <!--info about profile and edit button that leads to another identical page with a form in place of the straight up info-->
+        <div class="col-8">
+            <div class="information">
+                <h4>Vos Informations</h4>
 
+            </div>
         </div>
     </div>
 
@@ -73,32 +78,26 @@
 
 </body>
 <style>
+    .profile {
+        border: 2px solid black;
+    }
+
+    .information {
+        border: 2px solid black;
+        
+    }
+    .profile_container{
+        margin: 0%;
+
+    }
+
     .profilepic {
+        width: 100px;
+        height: 100px;
         position: relative;
-        border-radius: 20%;
-        background: url(./content/profilepic.jpg) 50% 50% no-repeat;
-        width: 250px;
-        height: 250px;
-    }
-
-    th {
-        padding: .2em;
-    }
-
-    td {
-        background-color: #ffc;
-        border: 1px solid #900;
-        padding-left: .5em;
-        padding-right: .5em;
-    }
-
-    #trHeader {
-        color: #900;
-        text-decoration: underline;
-    }
-
-    .centerCell {
-        text-align: center;
+        overflow: hidden;
+        border: 3px solid #343A40;
+        border-radius: 100%;
     }
 </style>
 
