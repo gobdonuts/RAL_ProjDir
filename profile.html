@@ -60,14 +60,28 @@
         <div class="col-4">
             <div class="profile">
                 <h4>Votre Profil</h4>
-                <h5>Bienvenue Mathieu Labelle</h5>
-                <div class="profilepic"><img src="./content/profilepic.jpg" style="max-width: 100%; height: auto;"></div>
+                <h5>Bienvenue</h5>
+                <div class="wordart rainbow"><span class="text">Nom De Personne</span></div>
+                <div class="profilepic"><img src="./content/profilepic.jpg" style="max-width: 100%; height: auto;">
+                </div>
+                <h5>Historique des billets:</h5>
+                <div class="purchase_history">
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                    <a href="">Mumford and Sons - 2019-8-09</a></br>
+                </div>
             </div>
         </div>
         <!--info about profile and edit button that leads to another identical page with a form in place of the straight up info-->
         <div class="col-8">
             <div class="information">
                 <h4>Vos Informations</h4>
+                <button type="button" class="btn btn-dark">Éditer mes infos</button>
 
             </div>
         </div>
@@ -78,15 +92,47 @@
 
 </body>
 <style>
+    .wordart {
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+    }
+
+    .wordart.rainbow {
+        transform: scale(1, 1.5);
+        -webkit-transform: scale(1, 1.5);
+        -moz-transform: scale(1, 1.5);
+        -o-transform: scale(1, 1.5);
+        -ms-transform: scale(1, 1.5);
+    }
+
+    .wordart.rainbow .text {
+        background: red;
+        background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #55ac2f, #0b13fd, #a804af);
+        background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #55ac2f, #0b13fd, #a804af);
+        background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #55ac2f, #0b13fd, #a804af);
+        background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #55ac2f, #0b13fd, #a804af);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .profile {
         border: 2px solid black;
     }
 
     .information {
         border: 2px solid black;
-        
+
     }
-    .profile_container{
+
+    .profile_container {
         margin: 0%;
 
     }
