@@ -31,8 +31,7 @@
                 <!--Link to home page-->
                 <img src="http://placehold.it/250x50/343A40/?text=RAL+LOGO+Tabarnak">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -83,6 +82,37 @@
                 <h4>Vos Informations</h4>
                 <button type="button" class="btn btn-dark">Éditer mes infos</button>
 
+                <form action="/action_page.php" method="post">
+                    <label for="firstname">Prénom: </label><br>
+                    <input type="text" id="firstname" name="firstname" readonly placeholder="Prénom"><br>
+                    <label for="lastname">Nom de famille: </label><br>
+                    <input type="text" id="lastname" name="lastname" readonly placeholder="Nom de famille"><br>
+                    <label for="email">Courriel: </label><br>
+                    <input type="email" id="email" name="email" readonly placeholder="test@email.com"><br>
+                    <label for="address">Adresse: </label><br>
+                    <input type="text" id="address" name="address" readonly placeholder="3 rue Inexistante"><br>
+                    <label for="town">Ville: </label><br>
+                    <input type="text" id="town" name="town" readonly placeholder="Montréal"><br>
+                    <label for="province">Province ou territoire: </label><br>
+                    <select id="province">
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>    
+                    </select><br>
+                    <label for="phone">Entrer # de tel:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" readonly>
+                </form>
+
             </div>
         </div>
     </div>
@@ -101,9 +131,8 @@
         display: inline-block;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
     }
-
+    
     .wordart.rainbow {
         transform: scale(1, 1.5);
         -webkit-transform: scale(1, 1.5);
@@ -111,7 +140,7 @@
         -o-transform: scale(1, 1.5);
         -ms-transform: scale(1, 1.5);
     }
-
+    
     .wordart.rainbow .text {
         background: red;
         background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #55ac2f, #0b13fd, #a804af);
@@ -122,21 +151,19 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
+    
     .profile {
         border: 2px solid black;
     }
-
+    
     .information {
         border: 2px solid black;
-
     }
-
+    
     .profile_container {
         margin: 0%;
-
     }
-
+    
     .profilepic {
         width: 100px;
         height: 100px;
@@ -147,4 +174,4 @@
     }
 </style>
 
-</html>
+</html>°
