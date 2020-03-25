@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>Billet Partout | Acceuil</title>
+    <script src="https://kit.fontawesome.com/c681f65641.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+        html, body {
+            overflow-x:hidden;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        button:focus,input:focus, textarea:focus, select:focus{
+             outline: none;
+         }
+        i{
+            padding:9px;
+            border-radius: 1em;
+        }
+        i:hover{
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        svg{
+            transform: scale(1.1);
+        }
+        header{
+            background: rgb(13,116,29);
+            background: linear-gradient(137deg, rgba(13,116,29,1) 0%, rgba(12,148,31,1) 8%, rgba(12,174,33,1) 18%, rgba(12,201,35,1) 35%, rgba(12,228,37,1) 46%, rgba(12,228,37,1) 69%, rgba(10,202,34,1) 86%, rgba(5,129,26,1) 100%);
+            padding: 0;
+        }
+        #searchContainer{
+            text-align: center;
+            padding:130px 100px 0px 100px;
+        }
+        .searchBar{
+            position: relative;
+        }
+        .search{
+            position:relative;
+            right:45px;
+            color: green;
+            transition: all .2s ease-in-out;
+        }
+        .searchBar input{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            margin-bottom: 5px;
+            width:35em;
+            padding: 12px 45px 12px 24px;
+            font-size: 1.1em;
+            line-height: 18px;
+            border-radius: 50px;
+            border: 1px solid green;
+            transition: all .2s ease-in-out;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+        }
+        .searchBar input:hover{
+            border-color: #333;
+        }
+        .filterButton{
+            border-radius: 1em;
+            background-color:white;
+            border: 1px solid green;
+            width:100px;
+            height: 30px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+        }
+        h1{
+            font-size:3em;
+            margin:0;
+            color:black;
+        }
+        #featuredSection{
+            display: grid;
+            grid-gap: 50px 50px;
+        }
+        #featuredSection section{
+            width:100px;
+            height:80px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onscroll = function() {
+            let headerElement = $('header');
+            let height = headerElement.height();
+            if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
+                console.log(true);
+            } else {
+                console.log(false);
+            }
+        }
+    </script>
+    <header>
+        <div id="searchContainer">
+            <img src="img/logo.png" height="80px" width="466px">
+            <!-- <h1>Billet Partout</h1> -->
+            <div class="searchBar">
+                <input type="text">
+                <a href=""><i class="search fas fa-search"></i></a>
+            </div>
+            <div id="filterButtonContainer">
+                <button class="filterButton"></button>
+                <button class="filterButton"></button>
+                <button class="filterButton"></button>
+                <button class="filterButton"></button>
+            </div>
+        </div>
+        <svg id="Layer_1" data-name="Laye   r 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2003.59 174"><path d="M1.5,562.5s837.17,286,2003.59,0c0,222-9.59,131-9.59,131l7,43H1.5Z" transform="translate(-1.5 -562.5)" fill="#fff"/></svg>
+    </header>
+    <section id="featuredSection">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </section>
+</body>
+</html>
